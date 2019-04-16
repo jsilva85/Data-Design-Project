@@ -1,6 +1,7 @@
-drop table if exists buyer;
-drop table if exists ticket;
-drop table if exists registration;
+drop table if exists buyer
+drop table if exists ticket
+drop table if exists registration
+
 create table buyer (
         buyerId BINARY (16) not null,
         buyerEmail VARCHAR(128) not null,
@@ -27,6 +28,7 @@ create table registration (
         registrationFullName VARCHAR(128) not null,
         unique (registrationEmail),
         unique (registrationFullName),
+        foreign key (registrationId) references buyer(buyerId),
         primary key (registrationId)
 
 ) ;
