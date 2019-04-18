@@ -4,7 +4,6 @@
     <meta charset = "utf-8">
     <title>Data-Design-Project</title>
     <link rel = "stylesheet" href = "persona.css">
-    <link rel = "story" href="story.html">
 </head>
 <body>
 <h1 class = "center">Data Design Project</h1>
@@ -24,6 +23,6 @@
 <div>
     <a href="Interaction-Flow.html">Interaction Flow</a>
 </div>
-<div><a href="EntityRelationshipDiagram.html">Entity Relationship Diagram</a>
+<div><a href="ERD.html">Entity Relationship Diagram</a>
 </div>
 </body>
