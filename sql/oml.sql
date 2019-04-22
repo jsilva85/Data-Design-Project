@@ -15,4 +15,4 @@ SELECT buyerId, buyerEmail, buyerFirstName, buyerFirstName from buyer WHERE buye
 
 SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN cart on buyer.buyerId = cart.registrationEmail WHERE buyerEmail= "myemail@myemail.com";
 
-SELECT like COUNT (*) from tweet WHERE tweetID VALUES(UNHEX("3d16deeb59994e1faa6f7c36948d1a57");
+SELECT COUNT (tweetProfileId) from `like` WHERE tweetID UNHEX("3d16deeb59994e1faa6f7c36948d1a57");
