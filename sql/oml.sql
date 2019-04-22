@@ -1,30 +1,15 @@
-INSERT INTO row buyer()
+INSERT INTO buyer VALUES (UNHEX("e933812c283a4f24867be2dbf01359f5"), "myemail@myemail.com", "Johnny", "Begood");
+INSERT INTO buyer VALUES (UNHEX("728287ddd5754c17aae16cb609f1d4d8"), "anotheremail@email.com", "Tod", "dler");
+INSERT INTO buyer VALUES (UNHEX("93dc505aaad748199e0e0834c3fbeac4"), "theemail@myemail.com", "lester", "fester");
+
+UPDATE buyer SET buyerEmail = "myemail@myemail.com" = WHERE buyerEmail = "anothermail@email.com";
+UPDATE buyer SET buyerFirstName = "Uncle" = WHERE buyerFirstName = "lester";
+
+DELETE FROM buyer WHERE buyerLastName = "Begood";
+
+INSERT INTO cart VALUES (UNHEX("9b0cbe535eff4327846319d1e90dd91b"), UNHEX("19cbcfcf8fa34837bf31af2f1d93c356"), UNHEX("0ad3cb296fda41e39242957389715815"), "helloworld@email.com", "Jose Cuevo");
 
 
-INSERT INTO buyer (buyerId, buyerEmail, buyerFirstName, buyerLastName) VALUES (UNHEX("e933812c283a4f24867be2dbf01359f5"), "myemail@myemail.com", "Johnny", "Begood");
-INSERT INTO buyer (buyerId, buyerEmail, buyerFirstName, buyerLastName) VALUES (UNHEX("728287ddd5754c17aae16cb609f1d4d8"), "anotheremail@email.com", "Tod", "dler");
-INSERT INTO buyer (buyerId, buyerEmail, buyerFirstName, buyerLastName) VALUES (UNHEX("93dc505aaad748199e0e0834c3fbeac4"), theemail@myemail.com", "lester", "fester");
-
-UPDATE buyer SET  colunm1 = buyerEmail, WHERE primary key = uuid;
-
-UPDATE buyer SET = UNHEX("d3e0e26f574c4a8d95da2a989646ad2d"),
-    buyerId = "hello@hello.com" = WHERE buyerEmail = UNHEX ("0820947c80c64a67abddc60fe473265b");
-
-DELETE FROM buyer WHERE buyerEmail primary key = uuid;
-DELETE FROM buyer WHERE buyerEmail = UNHEX("2f8f4e6f6d22421ea49a5cb39df323ec");
-
-INSERT INTO cart (cartTicketId, registrationId, cartBuyerId, registrationEmail, registrationFullName)  VALUES (UNHEX ("2e7cc5fd-c116-4f0a-822d-bb79865d655a"),"cart missing data", NOW ());
-
-SELECT buyerId, buyerEmail, buyerFirstName, buyerLastName, WHERE buyer = true;
-
-SELECT buyerId,buyerEmail, buyerFirstName, buyerLastName from cart WHERE cartTicketId = UNHEX("d936cf1c57d84dd5a65a4f9cb0bf6b4c");
-
-SELECT
-
-    INSERT INTO buyer('buyerId', 'buyerEmail', 'buyerFirstName', 'buyerLastName')
-VALUES ('123456', 'myemail@myemail.com', 'Johnny', 'Begood');
-
-INSERT INTO buyer VALUES (UNHEX("e933812c283a4f24867be2dbf01359f5"), "123456", "myemail@myemail.com", "Johnny", "Begood");
 
 
 
