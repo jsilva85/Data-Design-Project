@@ -13,6 +13,6 @@ INSERT INTO cart(cartBuyerId, cartTicketId, registrationEmail) VALUES (UNHEX("72
 
 SELECT buyerId, buyerEmail, buyerFirstName, buyerFirstName from buyer WHERE buyerLastName = "dler";
 
-SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN cart on buyer.buyerId = cart.registrationEmail WHERE buyerEmail= "myemail@myemail.com";
+SELECT cart.cartTicketId FROM cart INNER JOIN buyerEmail on buyer.buyerId = buyer.buyerEmail WHERE cartTicketId = "myemail@myemail.com";
 
 SELECT COUNT (tweetProfileId) from `like` WHERE tweetID UNHEX("3d16deeb59994e1faa6f7c36948d1a57");
