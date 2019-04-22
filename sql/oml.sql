@@ -15,4 +15,4 @@ SELECT buyerId, buyerEmail, buyerFirstName, buyerFirstName from buyer WHERE buye
 
 SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN cart on buyer.buyerId = cart.registrationEmail WHERE buyerEmail= "myemail@myemail.com";
 
-SELECT likeTweetId from tweet WHERE tweetContent LIKE "You're the best!";
+SELECT like COUNT (*) from tweet WHERE tweetContent LIKE "You're the best!";
