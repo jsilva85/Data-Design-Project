@@ -15,4 +15,4 @@ SELECT buyerId, buyerEmail, buyerFirstName, buyerFirstName from buyer WHERE buye
 
 SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN ticket on buyer.buyerId = ticket.ticketId WHERE buyerFirstName = "Tod";
 
-SELECT likeProfileId, likeTweetId, likeDate from tweet WHERE tweetContent LIKE "You're the best!";
+SELECT likeTweetId from tweet WHERE tweetContent LIKE "You're the best!";
