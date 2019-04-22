@@ -15,6 +15,7 @@ create table buyer (
         primary key (buyerId)
 );
 
+
 create table ticket (
         ticketId BINARY (16) not null,
         ticketType VARCHAR(128) not null,
@@ -40,3 +41,4 @@ create table cart (
     primary key (cartTicketId, cartBuyerId,registrationId)
 
 ) ;
+
