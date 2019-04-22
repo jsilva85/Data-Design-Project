@@ -13,6 +13,6 @@ INSERT INTO cart(cartBuyerId, cartTicketId, registrationEmail) VALUES (UNHEX("72
 
 SELECT buyerId, buyerEmail, buyerFirstName, buyerFirstName from buyer WHERE buyerLastName = "dler";
 
-SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN ticket on buyer.buyerId = ticket.ticketId WHERE buyerFirstName = "Tod";
+SELECT buyer.buyerId, buyer.buyerEmail,buyer.buyerFirstName, buyer.buyerLastName FROM buyer INNER JOIN cart on buyer.buyerId = cart.registrationEmail WHERE buyerEmail= "myemail@myemail.com";
 
 SELECT likeTweetId from tweet WHERE tweetContent LIKE "You're the best!";
